@@ -36,10 +36,12 @@
             <button class="btn" onclick="appendValue('1')">1</button>
             <button class="btn" onclick="appendValue('2')">2</button>
             <button class="btn" onclick="appendValue('3')">3</button>
-            <button class="btn equal" onclick="calculate()">=</button>
+            <button class="btn" onclick="appendValue('()')">()</button>
             
-            <button class="btn col-span-2" onclick="appendValue('0')">0</button>
+            <button class="btn" onclick="appendValue('0')">0</button>
             <button class="btn" onclick="appendValue('.')">.</button>
+            <button class="btn btn-warning btn-backspace" onclick="backspace()">⌫</button>
+            <button class="btn equal" onclick="calculate()">=</button>
         </div>
     </div>
 
@@ -54,6 +56,13 @@
         }
         function clearDisplay() {
             display.innerText = '0';
+        }
+        function backspace() {
+            if (display.innerText.length > 1) {
+                display.innerText = display.innerText.slice(0, -1);
+            } else {
+                display.innerText = '0';
+            }
         }
         function calculate() {
             try {

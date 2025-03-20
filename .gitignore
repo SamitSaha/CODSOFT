@@ -1,1 +1,12 @@
 **/EasyFolio/
+**/node-modules/
+**/public/
+
+**package-lock.json
+**package.json
+
+**reportWebVitals.js
+**setupTests.js
+**logo.svg
+
+/React/node_modules
