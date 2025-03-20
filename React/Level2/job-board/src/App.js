@@ -7,6 +7,7 @@ import EmployerDashboard from "./pages/EmployerDashboard";
 // import CandidateDashboard from "./pages/CandidateDashboard";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Register from "./pages/Register";
 import Navbar from "./components/Navbar";
 // import Footer from "./components/Footer";
 
@@ -22,9 +23,9 @@ function App() {
         {/* <Route path="/candidate-dashboard" element={<CandidateDashboard />} />  */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
-      {/* <Footer /> */}
-      
+      {/* <Footer /> */}      
     </Router>
     
   );
