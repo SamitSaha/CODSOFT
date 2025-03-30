@@ -1,0 +1,46 @@
+for react 
+
+--------------------
+***** Part 1 ******
+--------------------
+
+1. Material UI (website)
+2. React Icon (Website)
+3. npmjs.com (website) 
+4. bootstrap 4 npm react (website) 
+
+
+
+i. npx create-react-app "app-name"
+ii. instal -> npm install react-router-dom
+iii. npm install react-icons --save
+iv. in package.json -> first {} -> add "bootstrap": "4.1.3" & install -> npm install. 
+    it adds the bootstrap4 npm react into the project.
+v. npm install @mui/material @emotion/react @emotion/styled (default install mui)
+vi. npm install @mui/material @mui/styled-engine-sc styled-components (With styled-components install mui)
+vii. npm install @mui/icons-material (ICONs install mui)
+
+
+--------------------
+***** Part 2 ******
+--------------------
+
+1. app.css clean.  google fonts -> lato. @import style. add font-family in body at app.css .
+2. folder create src -> pages/home/index.js, component/header/index.js
+3. app.js -> 
+
+    import {BrowserRouter, Routes, Route} from "react-router-dom"
+    function App() {
+        return (
+            <BrowserRouter>
+            <Header/>
+            <Routes>
+                <Route path="/" exact={true} element={<Home/> } />
+            </Routes>
+            </BrowserRouter>
+        );
+    }
+4. import google fonts in css. 
+5. import logo.png as logo and give it as a source. 
+6. create a design into css file and call it into the classname. 
+7. from mui go component -> button -> import Button from '@mui/material/Button';
